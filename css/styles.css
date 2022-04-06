@@ -41,10 +41,10 @@ main {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .quote-container {
-  min-height: 130px;
+  min-height: 125px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -55,6 +55,7 @@ main {
 q {
   font-size: 2.545rem;
 }
+
 
 #dice-button {
   display: flex;
@@ -67,6 +68,17 @@ q {
   border: none;
   position: absolute;
   bottom: -32px;
+  pointer-events: all;
+  cursor: pointer;
+  margin: 0;
+
+}
+
+#dice-button:hover {
+  box-shadow: 0 0 20px 10px hsl(150, 100%, 66%, 0.35);
+}
+
+
 }
 /* --Footer Styles-- */
 
@@ -74,6 +86,7 @@ q {
   font-size: 11px;
   text-align: center;
   margin-top: 90px;
+  align-self: flex-end;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
