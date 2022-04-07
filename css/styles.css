@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.hide {
+  display: none !important;
+}
+
 html {
   font-family: "Manrope", sans-serif;
   font-size: 11px;
@@ -45,7 +49,7 @@ main {
   margin-bottom: 0;
 }
 .quote-container {
-  min-height: 145px;
+  min-height: 140px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -56,6 +60,14 @@ main {
 q {
   font-size: 2.125rem;
   line-height: 1.4;
+}
+
+.mobile-pattern-divider {
+  display: block;
+}
+
+.desktop-pattern-divider {
+  display: none;
 }
 
 button {
@@ -76,14 +88,25 @@ button:hover {
   box-shadow: 0 0 20px 10px hsl(150, 100%, 66%, 0.35);
 }
 
+button:active {
+  transform: scale(0.95);
+}
+
 /* --Footer Styles-- */
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.25rem;
   text-align: center;
-  margin-top: 90px;
-  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  height: 60px;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
@@ -92,7 +115,7 @@ button:hover {
 
 /* --Media Queries-- */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   main {
     width: 540px;
     height: 333px;
@@ -103,11 +126,23 @@ button:hover {
   }
 
   #advice-header {
-    font-size: 1.17rem;
+    font-size: 1.19rem;
     margin-top: 50px;
   }
 
   q {
     font-size: 2.5rem;
+  }
+
+  .mobile-pattern-divider {
+    display: none;
+  }
+
+  .desktop-pattern-divider {
+    display: block;
+  }
+
+  .attribution {
+    height: 80px;
   }
 }
