@@ -42,22 +42,23 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin-top: 40px;
+  margin-bottom: 0;
 }
 .quote-container {
-  min-height: 125px;
+  min-height: 145px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 q {
-  font-size: 2.545rem;
+  font-size: 2.125rem;
+  line-height: 1.4;
 }
 
-
-#dice-button {
+button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,18 +69,13 @@ q {
   border: none;
   position: absolute;
   bottom: -32px;
-  pointer-events: all;
   cursor: pointer;
-  margin: 0;
-
 }
 
-#dice-button:hover {
+button:hover {
   box-shadow: 0 0 20px 10px hsl(150, 100%, 66%, 0.35);
 }
 
-
-}
 /* --Footer Styles-- */
 
 .attribution {
@@ -90,4 +86,28 @@ q {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* --End Footer Styles-- */
+
+/* --Media Queries-- */
+
+@media (min-width: 1200px) {
+  main {
+    width: 540px;
+    height: 333px;
+  }
+
+  .advice-container {
+    width: 445px;
+  }
+
+  #advice-header {
+    font-size: 1.17rem;
+    margin-top: 50px;
+  }
+
+  q {
+    font-size: 2.5rem;
+  }
 }
