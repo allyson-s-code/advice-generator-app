@@ -16,95 +16,70 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+The challenge was to build out the advice generator app using the Advice Slip API and get it looking as close to the design as possible.
 
 ### The challenge
 
 Users should be able to:
 
-- 
+- View the optimal layout for the app depending on their device's screen size
+- See hover state for the interactive element on the page
+- Generate a new piece of advice by clicking the dice icon
+
+*
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Advice Generator App](images/app-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/allyson-s-code/advice-generator-app](https://github.com/allyson-s-code/advice-generator-app)
+- Live Site URL: [https://allyson-s-code.github.io/advice-generator-app/](https://allyson-s-code.github.io/advice-generator-app/)
 
-## My process
+## My Process
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I really enjoyed this project. Using the given jpeg design files I was able to capture the look and functionality of the app pretty well. I started by creating HTML and mobile-first styles and then added in the necessary styles for desktop. The JavaScript was a small part of the app but I appreciated the simplicity and the practice with fetching from the API.
 
-To see how you can add code snippets, see below:
+I also created a glow effect for the first time using CSS and added my own scale change upon click:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+button:hover {
+  box-shadow: 0 0 20px 10px hsl(150, 100%, 66%, 0.35);
+}
+
+button:active {
+  transform: scale(0.95);
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I will be continuing my practice with JavaScript and especially working with functions and objects with key value pairs.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [MDN Docs Button Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role) - Constantly learning more about accessbility and in this case the importance of adding the proper `type` for functionality.
+- [Free Code Camp- How to Keep Your Footer Where It Belongs](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/) - This article helped me with the placement of my footer element.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Allyson Smith](https://allyson-s-code.github.io/Web-Dev-Portfolio/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@allyson-s-code](https://www.frontendmentor.io/profile/allyson-s-code)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to MARCIN GARSKI [@margsoftbf](https://www.frontendmentor.io/profile/margsoftbf) for the beautifully simple solution to displaying the correct size svg (the horizontal line element) using just css and html. I was overcomplicating and looking into scaling the svg using viewbox and/or using js and I came across his solution- changing the `display` attribute on each element depending on media size on the stylesheet. :)
