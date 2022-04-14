@@ -24,12 +24,6 @@ button.addEventListener("click", function () {
 const mobileHrDivider = document.querySelector(".mobile-pattern-divider");
 const desktopHrDivider = document.querySelector(".desktop-pattern-divider");
 
-//const desktopUpdate = window.matchMedia("(min-width: 1000px)");
-//desktopUpdate.addEventListener("change", function () {
-//mobileHrDivider.classList.add(".hide");
-//desktopHrDivider.classList.remove(".hide");
-//});
-
 const mq = window.matchMedia("(min-width: 1000px)");
 
 function widthChange() {
@@ -48,16 +42,3 @@ if (matchMedia) {
     widthChange();
   });
 }
-
-//function widthChange(mq) {
-//if (mq.matches) {
-//mobileHrDivider.classList.add(".hide");
-//desktopHrDivider.classList.remove(".hide");
-//} else {
-// mobileHrDivider.classList.remove(".hide");
-//desktopHrDivider.classList.add(".hide");
-//}
-//}
-
-////widthChange(mq);
-//matchMedia();
