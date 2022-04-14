@@ -19,26 +19,3 @@ const displayAdvice = function (data) {
 button.addEventListener("click", function () {
   getData();
 });
-
-//SVG update with larger media
-const mobileHrDivider = document.querySelector(".mobile-pattern-divider");
-const desktopHrDivider = document.querySelector(".desktop-pattern-divider");
-
-const mq = window.matchMedia("(min-width: 1000px)");
-
-function widthChange() {
-  if (mq.matches) {
-    mobileHrDivider.classList.add(".hide");
-    desktopHrDivider.classList.remove(".hide");
-  } else {
-    mobileHrDivider.classList.remove(".hide");
-    desktopHrDivider.classList.add(".hide");
-  }
-}
-widthChange();
-
-if (matchMedia) {
-  mq.addEventListener("change", function () {
-    widthChange();
-  });
-}
